@@ -1,7 +1,9 @@
+/* Override default elements*/
+
 body {
     padding: 16px;
     margin: 0;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 nav {
@@ -9,6 +11,45 @@ nav {
     padding: 12px;
     border-radius: 12px;
 }
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+}
+
+dl {
+    border-width: 2px;
+    border-color:black;
+    border-style:solid;
+    padding:12px 12px 12px 12px;
+
+}
+
+dt {
+    font-style:italic;
+
+
+}
+
+dd {
+    font-style:normal;
+
+}
+
+/* Custom Class Definitions*/
 
 .logo-and-name {
     height: 80px;
@@ -51,7 +92,7 @@ nav {
     display: block;
     text-align: center;
     width: 100%;
-    line-height: 250%;
+    line-height: 48px;
     background: #b3b0b0;
     border-radius: 12px;
     color: #000;
@@ -72,6 +113,14 @@ nav {
     margin-top: 12px;
     padding: 12px 16px;
     border-radius: 12px;
+    border-width: 2px;
+    border-color:lightslategrey;
+    border-style:dashed;
+
+}
+
+.fancy-bullet {
+    list-style:circle;
 }
 
 @media screen and (max-width: 768px) {
