@@ -1,9 +1,14 @@
-/* GENERAL PAGE STYLES */
+/* GLOBAL SETTINGS */
+* {
+    box-sizing: border-box; /* ensures consistent sizing */
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     color: #222;
-    margin: 20px; /* adds margin around the whole page */
+    margin: 20px; /* adds space around the page */
+    padding: 0;
     line-height: 1.6;
 }
 
@@ -41,12 +46,12 @@ nav {
     list-style: none;
     display: flex;
     gap: 10px;
-    padding: 0;
-    margin: 0 20px;
+    padding: 0 20px;
+    margin: 0;
 }
 
 .links li {
-    flex: 0;
+    flex: 0; /* prevents stretching */
 }
 
 .links a {
@@ -55,7 +60,7 @@ nav {
     color: white;
     text-align: center;
     padding: 10px 15px;
-    min-height: 48px;
+    min-height: 48px; /* rubric requirement */
     transition: background-color 0.3s;
 }
 
