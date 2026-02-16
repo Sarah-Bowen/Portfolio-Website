@@ -1,9 +1,9 @@
 /* GENERAL PAGE STYLES */
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     color: #222;
-    margin: 0;
+    margin: 20px; /* adds margin around the whole page */
     line-height: 1.6;
 }
 
@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .logo {
@@ -34,18 +34,19 @@ body {
 /* NAVIGATION */
 nav {
     background-color: #333;
+    padding: 5px 0;
 }
 
 .links {
     list-style: none;
     display: flex;
-    padding: 0 20px; /* horizontal padding inside nav */
-    margin: 0;
-    gap: 10px; /* space between menu items */
+    gap: 10px;
+    padding: 0;
+    margin: 0 20px;
 }
 
 .links li {
-    flex: 0; /* don't stretch items */
+    flex: 0;
 }
 
 .links a {
@@ -53,14 +54,14 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 10px 15px; /* button-like padding */
-    min-height: 48px; /* rubric requirement */
+    padding: 10px 15px;
+    min-height: 48px;
     transition: background-color 0.3s;
 }
 
 .links a:hover {
     background-color: #555;
-    border-radius: 4px; /* subtle rounding on hover */
+    border-radius: 4px;
 }
 
 /* HEADINGS */
