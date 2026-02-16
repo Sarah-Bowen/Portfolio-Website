@@ -1,20 +1,18 @@
+/* GENERAL PAGE STYLES */
 body {
-    padding: 16px;
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    color: #222;
     margin: 0;
-    font-family: "Oxygen", sans-serif;
+    line-height: 1.6;
 }
 
-nav {
-    background:  #f1f1f1;
-    padding: 12px;
-    border-radius: 12px;
-}
-
+/* HEADER */
 .logo-and-name {
-    height: 80px;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -22,65 +20,100 @@ nav {
 }
 
 .title {
-    font-size: 32px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .subtitle {
-    font-size: 16px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #333;
 }
 
 .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6px 12px;
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
 }
 
-.links > li {
-    width: 100%;
+.links li {
+    flex: 1;
 }
 
-.link {
+.links a {
     display: block;
-    text-align: center;
-    width: 100%;
-    line-height: 250%;
-    background: #b3b0b0;
-    border-radius: 12px;
-    color: #000;
     text-decoration: none;
-    transition: 0.3s ease all;
-}
-
-.link:hover {
-    background: purple;
     color: white;
+    text-align: center;
+    padding: 14px 0;
+    min-height: 48px;
+    transition: background-color 0.3s;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: #f1f1f1;
-    margin-top: 12px;
-    padding: 12px 16px;
-    border-radius: 12px;
+.links a:hover {
+    background-color: #555;
 }
 
-@media screen and (max-width: 768px) {
+/* HEADINGS */
+h1, h2 {
+    margin: 20px 0 10px 0;
+}
 
-    .links {
-        flex-direction: column;
-    }
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
 
-    .main {
-        flex-direction: column;
-    }
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* LISTS */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+dl {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
 }
