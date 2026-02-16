@@ -84,3 +84,7 @@ nav {
         flex-direction: column;
     }
 }
+
+.main {
+    border: 2px solid #ccc;
+}
